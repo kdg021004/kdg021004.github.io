@@ -1,12 +1,9 @@
 ---
-
 title: "Customer Segment Classification"
-
 description: "A Transformer-based classification experiment integrating multi-source customer data for five-class customer segment prediction."
-
 tech: "Python · PyTorch · KLUE/RoBERTa · Transformers · Machine Learning"
-
-## featured: false
+featured: false
+---
 
 ## Overview
 
@@ -32,11 +29,11 @@ Transformer 기반 분류 파이프라인을 실험했습니다.
 
 주요 처리 과정은 다음과 같습니다.
 
-* 여러 Parquet 데이터 로딩
-* 고객 ID 기준 데이터 통합
-* 회원정보의 `Segment`를 classification label로 사용
-* 고객별 여러 데이터 소스를 하나의 모델 입력으로 구성
-* A~E label을 0~4 class로 변환
+- 여러 Parquet 데이터 로딩
+- 고객 ID 기준 데이터 통합
+- 회원정보의 `Segment`를 classification label로 사용
+- 고객별 여러 데이터 소스를 하나의 모델 입력으로 구성
+- A~E label을 0~4 class로 변환
 
 ## Modeling
 
@@ -48,14 +45,14 @@ Transformer 기반 분류 파이프라인을 실험했습니다.
 학습 과정에서는 클래스 불균형과 학습 안정성을 다루기 위해
 다음 방법들을 실험했습니다.
 
-* Class-weighted loss
-* Focal loss
-* Text augmentation
-* Embedding-space oversampling
-* Early stopping
-* Gradient accumulation
-* Minority-class focused model
-* Main model과 minority model의 ensemble
+- Class-weighted loss
+- Focal loss
+- Text augmentation
+- Embedding-space oversampling
+- Early stopping
+- Gradient accumulation
+- Minority-class focused model
+- Main model과 minority model의 ensemble
 
 ## Evaluation
 
@@ -64,9 +61,9 @@ Transformer 기반 분류 파이프라인을 실험했습니다.
 
 사용한 주요 metric은 다음과 같습니다.
 
-* Macro F1
-* Class-wise F1
-* Accuracy
+- Macro F1
+- Class-wise F1
+- Accuracy
 
 또한 5-fold cross-validation을 구현해
 단일 validation split에만 의존하지 않고
