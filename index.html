@@ -83,8 +83,11 @@ title: Home
       <p>최근 작성한 개발 기록입니다.</p>
     </div>
 
+    {% assign recent_posts =
+      site.posts | where_exp: "post", "post.archive != true" %}
+
     <ul class="post-list">
-      {% for post in site.posts limit:5 %}
+      {% for post in recent_posts limit:5 %}
         <li class="post-item">
           <a
             class="post-item-title"

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "마크다운 예제"
+title: "마크다운 예제"
+archive: true
 ---
 
 
