@@ -45,6 +45,7 @@ defaults:
       type: "posts"
     values:
       layout: post
+      archive: false
 
   - scope:
       path: ""
