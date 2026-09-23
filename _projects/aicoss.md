@@ -3,7 +3,7 @@ title: "AICOSS — Long-Document Question Answering System"
 description: "A long-document LLM question answering system integrating retrieval, specialist execution, orchestration, and evidence validation."
 tech: "Python · LLM · RAG · Orchestration · Runtime Integration · Validation"
 featured: true
-github: "https://github.com/dodams258/aicoss"
+#github: "https://github.com/dodams258/aicoss"
 ---
 
 ## Overview
@@ -136,6 +136,20 @@ orchestration contract와 runtime integration 경로를 구현하고,
 여러 AI component가 함께 동작할 때
 어떤 결과를 신뢰하고 다음 단계로 전달할 것인지까지
 시스템 수준에서 다루는 경험을 할 수 있었습니다.
+
+## Current Project Status
+
+이 프로젝트는 현재 저장소의 `main` 기준으로 Router, document storage,
+structured ingestion, exhaustive scan, verification,
+deterministic reducers의 기반이 구현되어 있습니다.
+
+Orchestration은 contract와 runtime integration foundation을 중심으로 구현되어 있으며,
+production RAG, final specialists, final answer generation은
+계속 통합 및 개발 중입니다.
+
+본 페이지에서는 전체 프로젝트의 현재 상태보다는
+제가 캡스톤 프로젝트에서 주로 담당한 orchestration,
+runtime integration, identity/evidence/coverage validation 경험을 중심으로 정리했습니다.
 
 ## What I Learned
 
